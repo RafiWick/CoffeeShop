@@ -23,7 +23,7 @@ namespace CoffeeShop.Model
 
         public double Total()
         {
-            return Items.Select(item => item.PriceInDollars()).Sum();
+            return Math.Round(Items.Select(item => item.PriceInDollars()).Sum(), 2);
         }
     }
 }

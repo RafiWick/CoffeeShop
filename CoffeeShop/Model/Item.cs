@@ -20,7 +20,7 @@ namespace CoffeeShop.Model
 
         public double PriceInDollars()
         {
-            return (Convert.ToDouble(PriceInCents) / 100.0D);
+            return Math.Round((Convert.ToDouble(PriceInCents) / 100.0D), 2);
         }
     }
 }
